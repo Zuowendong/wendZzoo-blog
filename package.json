@@ -1,0 +1,15 @@
+{
+  "name": "zwd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitee.com:wendZzoo/zwd.git",
+  "author": "zuowendong <17326195691@163.com>",
+  "license": "MIT",
+  "scripts": {
+     "dev": "vuepress dev docs",
+     "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.8"
+  }
+}
