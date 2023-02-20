@@ -1,4 +1,4 @@
-name: vuepress deploy
+name: Build and Deploy
 on: [push]
 jobs:
   build-and-deploy:
@@ -7,11 +7,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Build and Deploy
+    - name: vuepress-deploy
       uses: Zuowendong/zwd@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: Zuowendong/zwd
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
