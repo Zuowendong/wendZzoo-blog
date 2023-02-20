@@ -1,10 +1,11 @@
 import { defineConfig } from "vitepress";
 import vueConfig from "./vue.config";
+import workConfig from "./work.config";
 
 export default defineConfig({
 	title: "wendzzoo",
 	description: "Welcome my blogs",
-	base: "/zwd/",
+	base: "/",
 	lastUpdated: true,
 
 	head: [
@@ -25,6 +26,7 @@ export default defineConfig({
 					{ text: "Docker", link: "/docker/" },
 				],
 			},
+			{ text: "工作拾遗", link: "/work/" },
 		],
 		socialLinks: [{ icon: "github", link: "https://github.com/Zuowendong" }],
 		footer: {
@@ -33,6 +35,7 @@ export default defineConfig({
 		},
 		sidebar: {
 			"/vue/": vueConfig,
+			"/work/": workConfig,
 		},
 	},
 });

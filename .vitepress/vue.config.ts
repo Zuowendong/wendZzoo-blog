@@ -1,6 +1,5 @@
 export default [
 	{
-		collapsed: false,
 		items: [
 			{
 				text: "组件间通信方式总结",
