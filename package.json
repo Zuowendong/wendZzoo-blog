@@ -1,15 +1,17 @@
 {
   "name": "zwd",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "git@gitee.com:wendZzoo/zwd.git",
-  "author": "zuowendong <17326195691@163.com>",
-  "license": "MIT",
   "scripts": {
-     "dev": "vuepress dev docs",
-     "build": "vuepress build docs"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
   },
-  "devDependencies": {
-    "vuepress": "^1.9.8"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vitepress": "1.0.0-alpha.29"
   }
 }
