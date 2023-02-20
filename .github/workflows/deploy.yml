@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: deploy/checkout@master
 
     - name: Build and Deploy
       uses: Zuowendong/zwd@master
