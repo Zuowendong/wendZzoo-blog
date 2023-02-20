@@ -5,7 +5,7 @@ import workConfig from "./work.config";
 export default defineConfig({
 	title: "wendzzoo",
 	description: "Welcome my blogs",
-	base: "/",
+	base: "/zwd/",
 	lastUpdated: true,
 
 	head: [
