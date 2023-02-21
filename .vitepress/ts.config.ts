@@ -3,7 +3,7 @@ export default [
 		items: [
 			{
 				text: "ts泛型",
-				link: "/ts/generics",
+				link: "/ts/",
 			},
 		],
 	},
