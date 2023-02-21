@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import vueConfig from "./vue.config";
 import workConfig from "./work.config";
+import tsConfig from "./ts.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -21,6 +22,7 @@ export default defineConfig({
 				items: [
 					{ text: "Vue", link: "/vue/", activeMatch: "/vue/" },
 					{ text: "JS", link: "/js/" },
+					{ text: "TS", link: "/ts/" },
 					{ text: "CSS", link: "/css/" },
 					{ text: "HTML", link: "/html/" },
 					{ text: "Docker", link: "/docker/" },
@@ -35,6 +37,7 @@ export default defineConfig({
 		},
 		sidebar: {
 			"/vue/": vueConfig,
+			"/ts/": tsConfig,
 			"/work/": workConfig,
 		},
 	},
