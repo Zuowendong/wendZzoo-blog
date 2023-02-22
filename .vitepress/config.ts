@@ -10,11 +10,12 @@ export default defineConfig({
 	lastUpdated: true,
 
 	head: [
-		["link", { rel: "icon", href: "/favicon.png" }], // 也是放在/public目录中
+		["link", { rel: "icon", href: "/zwd/favicon.png" }], // 也是放在/public目录中
 	],
 
 	themeConfig: {
 		logo: "/favicon.svg",
+		outline: [1, 3],
 		nav: [
 			{ text: "主页", link: "/" },
 			{

@@ -9,6 +9,10 @@ export default [
 				text: "v-if 和 v-for 优先级",
 				link: "/vue/v-for",
 			},
+			{
+				text: "说一说vue mixin",
+				link: "/vue/mixin",
+			},
 		],
 	},
 ];
