@@ -8,6 +8,10 @@
 
 [说一说vue mixin](./vue/mixin.md)
 
+[extends 和 Vue.extend](./vue/extends.md)
+
+[v-model 双向绑定以及原理](./vue/v-model.md)
+
 ## Js
 
 ## Ts

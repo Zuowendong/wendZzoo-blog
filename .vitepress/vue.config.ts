@@ -13,6 +13,14 @@ export default [
 				text: "说一说vue mixin",
 				link: "/vue/mixin",
 			},
+			{
+				text: "extends 和 Vue.extend",
+				link: "/vue/extends",
+			},
+			{
+				text: "v-model 双向绑定以及原理",
+				link: "/vue/v-model.md",
+			},
 		],
 	},
 ];

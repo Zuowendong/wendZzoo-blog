@@ -325,6 +325,6 @@ export function useMsg() {
 
 1. 常见的组件扩展方式有 mixin，extends，slots
 2. mixin 按照本文写的来描述
-3. extends, 戳这里 （Vue.extend方法你用过吗？它能用来做组件扩展吗？）
+3. extends, [戳这里 （Vue.extend方法你用过吗？它能用来做组件扩展吗？）](./extends.md)
 4. 插槽主要用于vue组件中的内容分发，也可以用于组件扩展
 5. vue3中的composition api
