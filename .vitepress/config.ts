@@ -2,6 +2,9 @@ import { defineConfig } from "vitepress";
 import vueConfig from "./vue.config";
 import workConfig from "./work.config";
 import tsConfig from "./ts.config";
+import jsConfig from "./js.config";
+import cssConfig from "./css.config";
+import htmlConfig from "./html.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -39,6 +42,9 @@ export default defineConfig({
 		sidebar: {
 			"/vue/": vueConfig,
 			"/ts/": tsConfig,
+			"/js/": jsConfig,
+			"/css/": cssConfig,
+			"/html/": htmlConfig,
 			"/work/": workConfig,
 		},
 	},

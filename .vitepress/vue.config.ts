@@ -19,7 +19,7 @@ export default [
 			},
 			{
 				text: "v-model 双向绑定以及原理",
-				link: "/vue/v-model.md",
+				link: "/vue/v-model",
 			},
 		],
 	},
