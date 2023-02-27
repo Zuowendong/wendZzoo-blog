@@ -14,6 +14,8 @@
 
 ## Js
 
+[this指向](./js/index.md)
+
 ## Ts
 
 [泛型](./ts/index.md)
