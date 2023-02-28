@@ -12,6 +12,8 @@
 
 [v-model 双向绑定以及原理](./vue/v-model.md)
 
+[简述vue生命周期](./vue/lifecycle.md)
+
 ## Js
 
 [this指向](./js/index.md)

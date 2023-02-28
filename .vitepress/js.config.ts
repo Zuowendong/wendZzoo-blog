@@ -2,7 +2,7 @@ export default [
 	{
 		items: [
 			{
-				text: "js",
+				text: "this指向",
 				link: "/js/",
 			},
 		],

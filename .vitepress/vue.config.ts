@@ -21,6 +21,10 @@ export default [
 				text: "v-model 双向绑定以及原理",
 				link: "/vue/v-model",
 			},
+			{
+				text: "简述vue生命周期",
+				link: "/vue/lifecycle",
+			},
 		],
 	},
 ];
