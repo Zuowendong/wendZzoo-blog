@@ -5,6 +5,7 @@ import tsConfig from "./ts.config";
 import jsConfig from "./js.config";
 import cssConfig from "./css.config";
 import htmlConfig from "./html.config";
+import viteConfig from "./vite.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -29,6 +30,7 @@ export default defineConfig({
 					{ text: "TS", link: "/ts/" },
 					{ text: "CSS", link: "/css/" },
 					{ text: "HTML", link: "/html/" },
+					{ text: "Vite", link: "/vite/" },
 					{ text: "Docker", link: "/docker/" },
 				],
 			},
@@ -46,6 +48,7 @@ export default defineConfig({
 			"/css/": cssConfig,
 			"/html/": htmlConfig,
 			"/work/": workConfig,
+			"/vite/": viteConfig,
 		},
 	},
 });
