@@ -13,6 +13,10 @@ export default [
 				text: "vue3本地静态资源循环引用",
 				link: "/work/resource-reference",
 			},
+			{
+				text: "Vue 权限管理方案",
+				link: "/work/permission",
+			},
 		],
 	},
 ];
