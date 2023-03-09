@@ -14,9 +14,15 @@
 
 [简述vue生命周期](./vue/lifecycle.md)
 
+[说一说nextTick](./vue/nextTick.md)
+
 ## Js
 
 [this指向](./js/index.md)
+
+[函数式编程](./js/functional.md)
+
+[事件循环机制](./js/eventLoop.md)
 
 ## Ts
 

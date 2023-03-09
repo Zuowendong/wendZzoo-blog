@@ -25,6 +25,10 @@ export default [
 				text: "简述vue生命周期",
 				link: "/vue/lifecycle",
 			},
+			{
+				text: "说一说nextTick",
+				link: "/vue/nextTick",
+			},
 		],
 	},
 ];

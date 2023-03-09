@@ -17,6 +17,10 @@ export default [
 				text: "Vue 权限管理方案",
 				link: "/work/permission",
 			},
+			{
+				text: "鉴权的发展历程",
+				link: "/work/authentication",
+			},
 		],
 	},
 ];
