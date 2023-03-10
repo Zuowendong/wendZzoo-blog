@@ -6,6 +6,7 @@ import jsConfig from "./js.config";
 import cssConfig from "./css.config";
 import htmlConfig from "./html.config";
 import viteConfig from "./vite.config";
+import liveConfig from "./live.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -35,6 +36,7 @@ export default defineConfig({
 				],
 			},
 			{ text: "工作拾遗", link: "/work/" },
+			{ text: "生活", link: "/live/" },
 		],
 		socialLinks: [{ icon: "github", link: "https://github.com/Zuowendong" }],
 		footer: {
@@ -49,6 +51,7 @@ export default defineConfig({
 			"/html/": htmlConfig,
 			"/work/": workConfig,
 			"/vite/": viteConfig,
+			"/live/": liveConfig,
 		},
 	},
 });

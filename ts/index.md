@@ -1,5 +1,7 @@
 # 泛型
+
 ## 定义
+
 泛型generics， 宽泛类型。
 
 与之相反的就是确定类型，明确指定了类型，以下就是确定类型
@@ -8,12 +10,15 @@
 let a: string = 'abc'
 let b: boolean = true
 ```
+
 如果类型不对应就会报错
 
 ![generics](./assets/generics/1.png)
 
 ## 使用
+
 ### 何时使用泛型
+
 看下面这个例子，定义一个方法foo, 用来返回参数，如果没有指定类型，默认推到是any类型，这违背ts强制类型校验的初衷。
 
 ![generics](./assets/generics/2.png)
@@ -42,6 +47,7 @@ ts会自动推到foo参数的类型，这样写也是可以的，
 ![generics](./assets/generics/8.png)
 
 ### 类型约束
+
 看这样的例子
 
 ![generics](./assets/generics/9.png)
@@ -56,6 +62,7 @@ ts会自动推到foo参数的类型，这样写也是可以的，
 ![generics](./assets/generics/11.png)
 
 ### 在class中使用
+
 假设需要一个类专门来处理数字集合，可以支持添加数字读取数字
 
 ````js
@@ -96,13 +103,13 @@ console.log(collectionString.get()); // abc
 type TUser = { name: string; age: number };
 
 class Collection<T> {
-	data: T[] = [];
-	public set(...args: T[]) {
-		this.data.push(...args);
-	}
-	public get(): T | undefined {
-		return this.data.shift();
-	}
+ data: T[] = [];
+ public set(...args: T[]) {
+  this.data.push(...args);
+ }
+ public get(): T | undefined {
+  return this.data.shift();
+ }
 }
 
 let collectionNum = new Collection<number>();
