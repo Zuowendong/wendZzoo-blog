@@ -29,6 +29,10 @@ export default [
 				text: "说一说nextTick",
 				link: "/vue/nextTick",
 			},
+			{
+				text: "Vue模板编译原理",
+				link: "/vue/template",
+			},
 		],
 	},
 ];

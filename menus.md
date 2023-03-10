@@ -16,6 +16,8 @@
 
 [说一说nextTick](./vue/nextTick.md)
 
+[Vue模板编译原理](./vue/template.md)
+
 ## Js
 
 [this指向](./js/index.md)
@@ -33,5 +35,7 @@
 [水平垂直居中布局方案](./css/index.md)
 
 ## HTML
+
+[本地存储和localStorage的跨域方案](./html/index.md)
 
 ## Docker

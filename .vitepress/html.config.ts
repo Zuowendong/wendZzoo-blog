@@ -2,7 +2,7 @@ export default [
 	{
 		items: [
 			{
-				text: "html",
+				text: "本地存储和localStorage的跨域方案",
 				link: "/html/",
 			},
 		],

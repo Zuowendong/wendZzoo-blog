@@ -11,7 +11,7 @@
 ```js
 console.log(1);
 setTimeout(() => {
-console.log(2);
+  console.log(2);
 }, 0);
 console.log(3);
 ```
@@ -77,10 +77,10 @@ Event Loop执行过程
 ```js
 console.log(1);
 setTimeout(() => {
- console.log(2);
+  console.log(2);
 }, 0);
 Promise.resolve().then(() => {
- console.log(3);
+  console.log(3);
 });
 console.log(4);
 ```
@@ -101,10 +101,10 @@ console.log(4);
 <script>
 console.log(1);
 setTimeout(() => {
-    alert(2);
+  alert(2);
 }, 0);
 Promise.resolve().then(() => {
-    alert(3);
+  alert(3);
 });
 console.log(4);
 </script>
