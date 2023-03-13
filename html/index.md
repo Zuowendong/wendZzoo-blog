@@ -34,7 +34,7 @@
 
 我部署的个人项目，大屏设计器项目在 <http://106.53.143.75:8080/>， 在线简历模板项目在 <http://106.53.143.75:8080/resume/>
 
-```yam
+```text
 location / {
    root   /home/zwd/docker/vue/designer;
    index  index.html index.htm;
