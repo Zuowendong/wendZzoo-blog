@@ -26,7 +26,27 @@
 
 例如一个管理平台的项目，现在需要在首页有个按钮点击跳转到它的大屏展示页面，这个大屏项目是个另起的单独项目，但是后端复用了平台上很多模块的接口，这些接口都需要携带平台那登录之后才能获取的token，平台项目端的token是存储在 localStorage 中，两个项目的域名也不一样，这就出现了需要跨域从平台的 localStorage 中传输数据到大屏项目
 
-### 解决方案
+### 解决方案 配置nginx
+
+实际项目中这样的业务场景，两个项目隶属于同一个平台下，更合理的实现应该是将两个项目在nginx中配置成一个同源地址
+
+例如：
+
+我部署的个人项目，大屏设计器项目在 <http://106.53.143.75:8080/>， 在线简历模板项目在 <http://106.53.143.75:8080/resume/>
+
+```yam
+location / {
+   root   /home/zwd/docker/vue/designer;
+   index  index.html index.htm;
+}
+
+location /resume {
+   alias  /home/zwd/docker/vue/resume;
+   index  index.html index.htm;
+}
+```
+
+### 解决方案 使用postMessgae
 
 使用postMessgae, 可以安全地实现跨源通信
 

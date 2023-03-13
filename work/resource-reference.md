@@ -48,7 +48,9 @@ vue3中使用require有如下报错
 
 require 是 cjs 里的语法，vue2 普遍用 webpack 打包，兼容了 cjs 语法。
 
-### 正确使用 new URL
+### 使用 new URL
+
+vite 官方推荐使用方式： [官网地址](https://cn.vitejs.dev/guide/assets.html#new-url-url-import-meta-url)
 
 ```js
 <script setup>
@@ -62,7 +64,13 @@ function requireImg(i) {
   <img :src="requireImg(i)" :alt="`menu${i + 1}`" />
  </div>
 </template>
+```
 
+尤其需要注意，**new URL 传入的地址必须要是个字符串**
+
+```js
+// imagePath是个传入的变量， Vite 不会转换这个
+const imgUrl = new URL(imagePath, import.meta.url).href
 ```
 
 ### vite插件
