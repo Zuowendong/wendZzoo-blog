@@ -33,6 +33,10 @@ export default [
 				text: "Vue模板编译原理",
 				link: "/vue/template",
 			},
+			{
+				text: "Diff算法",
+				link: "/vue/diff",
+			},
 		],
 	},
 ];

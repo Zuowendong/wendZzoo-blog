@@ -18,6 +18,8 @@
 
 [Vue模板编译原理](./vue/template.md)
 
+[Diff算法](./vue/diff.md)
+
 ## Js
 
 [this指向](./js/index.md)
