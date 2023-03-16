@@ -7,6 +7,8 @@ import cssConfig from "./css.config";
 import htmlConfig from "./html.config";
 import viteConfig from "./vite.config";
 import liveConfig from "./live.config";
+import arithmeticConfig from "./arithmetic.config";
+import httpConfig from "./http.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -33,6 +35,7 @@ export default defineConfig({
 					{ text: "HTML", link: "/html/" },
 					{ text: "Vite", link: "/vite/" },
 					{ text: "Docker", link: "/docker/" },
+					{ text: "算法", link: "/arithmetic/" },
 				],
 			},
 			{ text: "工作拾遗", link: "/work/" },
@@ -52,6 +55,8 @@ export default defineConfig({
 			"/work/": workConfig,
 			"/vite/": viteConfig,
 			"/live/": liveConfig,
+			"/arithmetic/": arithmeticConfig,
+			"/http/": httpConfig,
 		},
 	},
 });
