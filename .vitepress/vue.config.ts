@@ -37,6 +37,14 @@ export default [
 				text: "Diff算法",
 				link: "/vue/diff",
 			},
+			{
+				text: "虚拟DOM",
+				link: "/vue/vnode",
+			},
+			{
+				text: "watch 和 computed",
+				link: "/vue/watch",
+			},
 		],
 	},
 ];

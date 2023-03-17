@@ -61,10 +61,10 @@
 3. 监管平台的项目，适配
 4. 个人设计器的项目
 5. vue中`<template>`这样的标签如何让浏览器识别的  -->  [Vue模板编译原理](../vue/template.md)
-6. diff算法
+6. diff算法  -->  [Diff算法](../vue/diff.md)
 7. 为什么有的组件库通过vue.use就可以使用
-8. watch中deep是干什么的
-9. 虚拟dom，为什么说虚拟dom比直接操作dom性能更好
+8. watch中deep是干什么的  -->  [watch 和 computed](../vue/watch.md)
+9. 虚拟dom，为什么说虚拟dom比直接操作dom性能更好  -->  [虚拟DOM](../vue/vnode.md)
 10. vue-router 用过哪些钩子函数
 11. vite构建流程
 12. js事件循环机制  -->  [事件循环机制](../js/eventLoop.md)
@@ -73,3 +73,12 @@
 15. axios是基于什么实现的
 16. XMLHttpRequest和fetch的区别
 17. 在请求发送前能否取消
+
+## 03/17
+
+普讯
+
+一面
+
+1. 团队管理
+2. 出差想法
