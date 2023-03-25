@@ -9,6 +9,7 @@ import viteConfig from "./vite.config";
 import liveConfig from "./live.config";
 import arithmeticConfig from "./arithmetic.config";
 import httpConfig from "./http.config";
+import projectConfig from "./project.config";
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -36,10 +37,12 @@ export default defineConfig({
 					{ text: "Vite", link: "/vite/" },
 					{ text: "Docker", link: "/docker/" },
 					{ text: "算法", link: "/arithmetic/" },
+					{ text: "Http", link: "/http/" },
 				],
 			},
 			{ text: "工作拾遗", link: "/work/" },
 			{ text: "生活", link: "/live/" },
+			{ text: "项目", link: "/project/" },
 		],
 		socialLinks: [{ icon: "github", link: "https://github.com/Zuowendong" }],
 		footer: {
@@ -57,6 +60,7 @@ export default defineConfig({
 			"/live/": liveConfig,
 			"/arithmetic/": arithmeticConfig,
 			"/http/": httpConfig,
+			"/project/": projectConfig,
 		},
 	},
 });
