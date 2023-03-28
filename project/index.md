@@ -429,3 +429,143 @@ export const buildModules = async () => {
   ])
 }
 ```
+
+## 组件拖拽
+
+使用H5原生的拖拽属性
+
+在组件列表项上设置可拖拽属性，设置draggable为true，表示当前原生可以杯拖拽，
+dragstart方法设置当前元素刚开始拖拽时的执行方法
+
+components/sidebar-list/SidebarList.vue
+
+```html
+<div
+  v-for="compItem in componentList"
+  :key="compItem.id"
+  class="compItem"
+  draggable="true"
+  @dragstart="handleDragStart($event, compItem)"
+>
+  <span>{{ compItem.name }}</span>
+</div>
+```
+
+```js
+function handleDragStart(e: DragEvent, compItem: ICompItem) {
+  e.dataTransfer?.setData('component', compItem.key)
+}
+```
+
+接收方，也就是元素会被拖到的地方，需要设置drop, dragover方法，其中方法调用是都需要先设置阻止冒泡e.preventDefault()才可以生效。
+
+```html
+<div class="canvasMain" @drop="handleDrop" @dragover="handleDragover"></div>
+```
+
+```js
+function handleDrop(e: DragEvent) {
+  e.preventDefault()
+  let compKey = e.dataTransfer?.getData('component')
+  console.log(compKey)
+}
+function handleDragover(e: DragEvent) {
+  e.preventDefault()
+  e.dataTransfer!.dropEffect = 'copy'
+}
+```
+
+## 国际化方案
+
+### 安装
+
+安装 vue-i18n 最新版支持 vue3
+
+```shell
+pnpm add vue-i18n -w
+```
+
+### 使用
+
+src/lang/index.ts
+
+```js
+import { createI18n } from 'vue-i18n'
+import zh from './zh'
+import en from './en'
+
+export const i18n = createI18n({
+  legacy: false,
+  locale: 'zh-cn',
+  messages: {
+    'zh-cn': { ...zh },
+    'en-us': { ...en }
+  }
+})
+```
+
+lang/zh.ts
+
+```js
+export default {
+  title: '大屏设计器',
+  'component-list': '组件列表',
+  property: '属性',
+  data: '数据',
+  event: '事件',
+  'canvas-size': '画布大小'
+}
+```
+
+lang/zn.ts
+
+```js
+export default {
+  title: 'Large screen designer',
+  'component-list': 'Component list',
+  property: 'Property',
+  data: 'Data',
+  event: 'Event',
+  'canvas-size': 'Canvas size'
+}
+```
+
+在main.js中引入全局使用
+
+main.js
+
+```js
+import { i18n } from '@/lang'
+app.use(i18n)
+```
+
+在模板中使用
+
+例如，在头部标题组件中将名称字段改为国际化方案
+
+```html
+<template>
+  <div class="main">
+    <div class="left"></div>
+    <div class="title">{{ $t('title') }}</div>
+    <div class="right">
+      <ThemeButton />
+      <SwitchLanguage />
+    </div>
+  </div>
+</template>
+```
+
+在 Composition API 中使用，需要使用computed改为响应式
+
+components/sidebar-component/SidebarComponent.vue
+
+```js
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+const TABS = reactive([
+  { component: '1', name: computed(() => t('property')) },
+  { component: '2', name: computed(() => t('data')) },
+  { component: '3', name: computed(() => t('event')) }
+])
+```

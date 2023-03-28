@@ -21,6 +21,10 @@ export default [
 				text: "鉴权的发展历程",
 				link: "/work/authentication",
 			},
+			{
+				text: "Verdaccio搭建npm私服",
+				link: "/work/verdaccio",
+			},
 		],
 	},
 ];
