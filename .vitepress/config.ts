@@ -10,6 +10,7 @@ import liveConfig from "./live.config";
 import arithmeticConfig from "./arithmetic.config";
 import httpConfig from "./http.config";
 import projectConfig from "./project.config";
+import baseConfig from './base.config'
 
 export default defineConfig({
 	title: "wendzzoo",
@@ -40,6 +41,7 @@ export default defineConfig({
 					{ text: "Http", link: "/http/" },
 				],
 			},
+			{ text: "计算机基础", link: "/base/" },
 			{ text: "工作拾遗", link: "/work/" },
 			{ text: "生活", link: "/live/" },
 			{ text: "项目", link: "/project/" },
@@ -61,6 +63,7 @@ export default defineConfig({
 			"/arithmetic/": arithmeticConfig,
 			"/http/": httpConfig,
 			"/project/": projectConfig,
+			"/base/": baseConfig
 		},
 	},
 });
