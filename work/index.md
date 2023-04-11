@@ -7,3 +7,7 @@
 [cdn](https://cdnjs.com/) -- cdn查询
 
 [AST explorer](https://astexplorer.net/) -- AST树生成
+
+[excalidraw](https://excalidraw.com/) -- 在线绘图
+
+[chat](http://chat1.aichatos.com/#/chat/1681177410096) -- chatGTP
