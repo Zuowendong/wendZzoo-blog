@@ -2,13 +2,6 @@
 
 现在前端框架几乎都引入了虚拟DOM来对真实dom进行抽象，它能极大增强框架在性能方面和扩展方面的表现。
 
-## 回答思路
-
-1. vnode是什么
-2. 引入vnode的好处
-3. vnode如何生成，如何转换成真实dom
-4. 在后续diff中的作用
-
 ## vnode是什么
 
 官方文档，[戳这里](https://cn.vuejs.org/guide/extras/rendering-mechanism.html#virtual-dom)

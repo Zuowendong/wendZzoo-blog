@@ -1,14 +1,6 @@
 # v-model 双向绑定以及原理
 
-## 回答思路
-
-1. 双向绑定的定义
-2. 好处
-3. 在哪里使用
-4. 如何使用
-5. 使用细节和实现原理
-
-### 定义
+## 定义
 
 vue 中双向绑定是一个指令 v-model，可以绑定一个动态值到视图，视图上变化也会修改该值。
 
@@ -18,24 +10,24 @@ v-model是一个语法糖，负责监听用户的输入事件以更新数据，�
 2. checkbox 和 radio的 :check  @change
 3. select的 :value @change
 
-### 好处
+## 好处
 
 使用v-model可以减少大量繁琐的事件处理代码，提高开发效率，代码可读性也更好。
 
-### 在哪里使用
+## 在哪里使用
 
 v-model指令在表单`<input>`、`<textarea>` 及 `<select>`  元素上创建双向数据绑定。
 
-### 如何使用
+## 如何使用
 
 原生的表单项可以直接使用v-model
 自定义组件实现v-model, 需要在组件内绑定value并处理输入事件
 
-### 源码
+## 源码
 
 通过测试，输出包含v-model模板的组件render渲染函数中，它是被转换成一个value属性以及一个事件监听，事件回调中更新绑定的变量数据。
 
-**测试input**
+**测试input**:
 
 新建一个index.html, 下载开发版vue，下载地址，[戳这里](https://v2.cn.vuejs.org/v2/guide/installation.html#%E7%9B%B4%E6%8E%A5%E7%94%A8-lt-script-gt-%E5%BC%95%E5%85%A5)
 
@@ -68,7 +60,7 @@ v-model指令在表单`<input>`、`<textarea>` 及 `<select>`  元素上创建�
 3. v-mode指令放在了 directives里，它对应实现的就是input自身的domProps里的value，是它的input事件
 4. 在input事件里设置data中定义的inputVal，也是挂载了实例上，直接赋值input输入的值，实现了更新
 
-**测试checkbox**
+**测试checkbox**:
 
 ```js
 <div id="app">
@@ -124,7 +116,7 @@ v-model指令在表单`<input>`、`<textarea>` 及 `<select>`  元素上创建�
 
 ![v-model](./assets/v-model/4.png)
 
-**测试下拉框**
+**测试下拉框**:
 
 ```js
 <div id="app">
@@ -342,7 +334,7 @@ export default {
 
 子组件B
 
-**model选项中定义prop属性名和event事件名，这样就解决了使用时想要改变事件名或属性名**
+**model选项中定义prop属性名和event事件名，这样就解决了使用时想要改变事件名或属性名**:
 
 ```js
 <template>

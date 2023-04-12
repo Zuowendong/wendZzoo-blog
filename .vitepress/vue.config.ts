@@ -10,7 +10,7 @@ export default [
 				link: "/vue/v-for",
 			},
 			{
-				text: "说一说vue mixin",
+				text: "vue mixin",
 				link: "/vue/mixin",
 			},
 			{
@@ -22,11 +22,11 @@ export default [
 				link: "/vue/v-model",
 			},
 			{
-				text: "简述vue生命周期",
+				text: "vue生命周期",
 				link: "/vue/lifecycle",
 			},
 			{
-				text: "说一说nextTick",
+				text: "nextTick",
 				link: "/vue/nextTick",
 			},
 			{

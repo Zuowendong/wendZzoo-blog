@@ -6,15 +6,15 @@
 
 [v-if 和 v-for 优先级](./vue/v-for.md)
 
-[说一说vue mixin](./vue/mixin.md)
+[vue mixin](./vue/mixin.md)
 
 [extends 和 Vue.extend](./vue/extends.md)
 
 [v-model 双向绑定以及原理](./vue/v-model.md)
 
-[简述vue生命周期](./vue/lifecycle.md)
+[vue生命周期](./vue/lifecycle.md)
 
-[说一说nextTick](./vue/nextTick.md)
+[nextTick](./vue/nextTick.md)
 
 [Vue模板编译原理](./vue/template.md)
 

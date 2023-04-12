@@ -1,4 +1,4 @@
-# 说一说vue mixin
+# vue mixin
 
 ## 什么是Mixin
 
