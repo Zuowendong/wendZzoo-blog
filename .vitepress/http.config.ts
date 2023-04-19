@@ -13,6 +13,10 @@ export default [
 				text: "TCP协议为什么要设计三次握手",
 				link: "/http/tcp",
 			},
+			{
+				text: "http请求方法",
+				link: "/http/method",
+			},
 		],
 	},
 ];
