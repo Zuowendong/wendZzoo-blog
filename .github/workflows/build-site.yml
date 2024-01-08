@@ -1,12 +1,12 @@
 name: Build Site
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,7 +23,7 @@ jobs:
         with:
           version: 7
           run_install: false
-      
+
       - name: Get pnpm store directory
         id: pnpm-cache
         shell: bash
@@ -39,7 +39,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build docs
         run: pnpm build
@@ -48,5 +48,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          exclude_assets: ''
+          exclude_assets: ""
           publish_dir: .vitepress/dist
