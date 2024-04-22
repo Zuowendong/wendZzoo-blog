@@ -18,14 +18,4 @@ hero:
     - theme: alt
       text: My GitHub
       link: https://github.com/Zuowendong
-      
-
-features:
-  - icon: 💡
-    title: 学习
-  - icon: ⚡️
-    title: 记录
-  - icon: 🚩
-    title: 生活
-
 ---
