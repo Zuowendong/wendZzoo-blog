@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myNew(constructor, ...args) {
+        const obj = {};
+        obj._proto_ = constructor.prototype;
+        let res = constructor.apply(obj, args);
+        return res instanceof Object ? res : obj;
+      }
+
+      function Animal(name) {
+        this.name = name;
+      }
+      const dog = myNew(Animal, "dog");
+
+      console.log(dog);
+    </script>
+  </body>
+</html>
