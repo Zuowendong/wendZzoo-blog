@@ -7,19 +7,19 @@
   </head>
   <body>
     <script>
-      function myNew(constructor, ...args) {
-        const obj = {};
-        obj._proto_ = constructor.prototype;
-        let res = constructor.apply(obj, args);
-        return res instanceof Object ? res : obj;
+      function sayHello(age, address) {
+        console.log(`Hello, I am ${this.name}, ${age} years old, I live in ${address}.`);
       }
 
-      function Animal(name) {
-        this.name = name;
-      }
-      const dog = myNew(Animal, "dog");
+      const person = {
+        name: "jack",
+      };
 
-      console.log(dog);
+      sayHello.call(person, 30, "南京");
+      sayHello.apply(person, [28, "苏州"]);
+
+      const boundSayHello = sayHello.bind(person, 18, "淮安");
+      boundSayHello();
     </script>
   </body>
 </html>
