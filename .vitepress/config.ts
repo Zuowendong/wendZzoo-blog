@@ -12,7 +12,6 @@ import httpConfig from "./http.config";
 import projectConfig from "./project.config";
 import baseConfig from "./base.config";
 import vueSourceConfig from "./vueSource.config";
-import earthworm from "./earthworm.config";
 
 export default defineConfig({
   title: "wendzzoo",
@@ -45,18 +44,12 @@ export default defineConfig({
       },
       {
         text: "源码",
-        items: [
-          { text: "Vue", link: "/vueSource/", activeMatch: "/vueSource/" },
-        ],
+        items: [{ text: "Vue", link: "/vueSource/", activeMatch: "/vueSource/" }],
       },
       { text: "计算机基础", link: "/base/" },
       { text: "工作拾遗", link: "/work/" },
       { text: "生活", link: "/live/" },
       { text: "项目", link: "/project/" },
-      {
-        text: "earthworm项目",
-        link: "/earthworm/",
-      },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/Zuowendong" }],
     footer: {
@@ -77,7 +70,6 @@ export default defineConfig({
       "/project/": projectConfig,
       "/base/": baseConfig,
       "/vueSource/": vueSourceConfig,
-      "/earthworm": earthworm,
     },
   },
 });
