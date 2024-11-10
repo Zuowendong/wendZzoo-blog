@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
     <script>
-      function sayHello(age, address) {
-        console.log(`Hello, I am ${this.name}, ${age} years old, I live in ${address}.`);
+      debugger;
+      setTimeout(() => {
+        console.log("A");
+        Promise.resolve().then(() => {
+          console.log("B");
+        });
+      }, 1000);
+
+      Promise.resolve().then(() => {
+        console.log("C");
+      });
+
+      new Promise((resolve) => {
+        console.log("D");
+        resolve("");
+      }).then(() => {
+        console.log("E");
+      });
+
+      async function sum(a, b) {
+        console.log("F");
       }
 
-      const person = {
-        name: "jack",
-      };
+      async function asyncSum(a, b) {
+        await Promise.resolve();
+        console.log("G");
+        return Promise.resolve(a + b);
+      }
 
-      sayHello.call(person, 30, "南京");
-      sayHello.apply(person, [28, "苏州"]);
-
-      const boundSayHello = sayHello.bind(person, 18, "淮安");
-      boundSayHello();
+      sum(3, 4);
+      asyncSum(3, 4);
+      console.log("H");
     </script>
   </body>
 </html>
